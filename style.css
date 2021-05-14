@@ -91,7 +91,7 @@ h1 {
 .cta:before {
     content: '';
     position: absolute;
-    background: url("arrow.svg") no-repeat;
+    background: url("svg/arrow.svg") no-repeat;
     width: 1.5em;
     height: 1.5em;
     left: 1.25em;
@@ -138,7 +138,7 @@ nav ul li a:hover {
     transform: scaleX(-1);
     padding: 3em 4em 2em;
     cursor: pointer;
-    transition: transform .3s;
+    transition: .3s;
 }
 .back-btn:hover {
     transform: scaleX(-1) translateX(6px);
@@ -173,7 +173,7 @@ nav ul li a:hover {
     }
     
     .menu-btn, .back-btn {
-        display: none;
+        display: grid;
     }
     
     ul {
@@ -188,7 +188,7 @@ nav ul li a:hover {
         padding: 2em;
     }
     .logo {
-        text-align: left;
+        text-align: center;
     }
     
     section {
@@ -204,5 +204,10 @@ nav ul li a:hover {
     .content {
         justify-self: left;
         margin-left: 4em;
+    }
+
+    .cta {
+        position: absolute;
+        margin-top: -2em;
     }
 }
